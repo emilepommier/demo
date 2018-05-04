@@ -1,130 +1,212 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Players without SR</title>
+    <title>Web integration demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="${window.location.origin}/../assets/main.css">
+
 </head>
 
 <body>
-<h1>Players without SR</h1>
+    <script>
+        var x = location.origin;
+    </script>
+    ​
+    <header>
+        <ul>
+            <li>
+                <img src='${window.location.origin}/../assets/img/logo_typo_long.svg' height='43'>
+            </li>
+            <li>Player integration</li>
+        </ul>
+    </header>
 
-  <ul>
-  	<a href="/clappr_noSR.html">
-  	  <h2>Clappr without SR</h2>
-  	</a>
-  </ul>
+    <table>
+        <tr>
+            <th>
+                <div class='title'>Players</div>
+            </th>
+            <th>
+                <!-- Hls.js + JW (ok) -->
+                <a href="${window.location.origin}/../jwplayer/hlsjs-jwplayer.html">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/jw8.png">
+                            </div>
+                        </div>
+                        <p>JWPlayer</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Hls.js + VJS (ok) -->
+                <a href="${window.location.origin}/../video.js/hlsjs-videojs.html">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/vjs.png">
+                            </div>
+                        </div>
+                        <p>VideoJS</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Hls.js + Clappr (ok) -->
+                <a href="${window.location.origin}/../clappr/hlsjs-clappr.html">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/clappr.png">
+                            </div>
+                        </div>
+                        <p>Clappr</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Hls.js + Flowplayer (ok) -->
+                <a href="${window.location.origin}/../flowplayer/flowplayer.html">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/flowplayer.png">
+                            </div>
+                        </div>
+                        <p>FlowPlayer</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Radiant -->
+                <a href="${window.location.origin}/../radiant-media-player/radiant.html">
 
-  <ul>
-  	<a href="/videojs_noSR.html">
-  	  <h2>Video JS without SR</h2>
-  	</a>
-  </ul>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/radiant.png">
+                            </div>
+                        </div>
+                        <p>Radiant MP</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- castLabs -->
+                <a href="${window.location.origin}/../castlabs/castlabs.html">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/castlabs.png">
+                            </div>
+                        </div>
+                        <p>castLabs</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Azure Media Player -->
+                <a href="${window.location.origin}/../azure-media-player/azuremp.html">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/azuremp.png">
+                            </div>
+                        </div>
+                        <p>Azure MP</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Bitmovin -->
+                <a href="${window.location.origin}/../bitmovin/bitmovin.html">
 
-  <ul>
-  	<a href="/flowplayer_noSR.html">
-  	  <h2>Flowplayer without SR</h2>
-  	</a>
-  </ul>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/bitmovin.png">
+                            </div>
+                        </div>
+                        <p>Bitmovin</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- THEOplayer -->
+                <a href="${window.location.origin}/../theoplayer/theoplayer.html">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/theoplayer.png">
+                            </div>
+                        </div>
+                        <p>THEOplayer</p>
+                    </div>
+                </a>
+            </th>
+        </tr>
+        </tr>
+        <tr>
+            <th>
+                <div class='title'>Media engines</div>
+            </th>
+            <th>
+                <!-- Hls.js wrapper (ok) -->
+                <a href="${window.location.origin}/../hls.js/hlsjs-wrapper.html">
 
-   <ul>
-  	<a href="/bitmovin_noSR.html">
-  	  <h2>Bitmovin without SR</h2>
-  	</a>
-  </ul>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/videodev.png">
+                            </div>
+                        </div>
 
-   <ul>
-  	<a href="/brightcove_noSR.html">
-  	  <h2>Brightcove without SR</h2>
-  	</a>
-  </ul>
+                        <p>Hls.js</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Dash.js wrapper (~ok, same thing as Dash.js+VJS -->
+                <a href="${window.location.origin}/../dash.js/dashjs-wrapper.html">
 
-  <ul>
-  	<a href="/jwplayer_noSR.html">
-  	  <h2>JW Player without SR</h2>
-  	</a>
-  </ul>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/dashif.png">
+                            </div>
+                        </div>
 
-  <ul>
-  	<a href="/jwplatform_noSR.html">
-  	  <h2>JW Platform without SR</h2>
-  	</a>
-  </ul>
+                        <p>Dash.js</p>
+                    </div>
+                </a>
+            </th>
+            <th>
+                <!-- Shaka Player wrapper (ok) -->
+                <a href="${window.location.origin}/../shaka-player/shakaplayer-wrapper.html">
 
-  <h1>Video monitoring without SR</h1>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="inner-card">
+                                <img src="${window.location.origin}/../assets/img/shakaplayer.png">
+                            </div>
+                        </div>
 
-   <ul>
-  	<a href="/mux_noSR.html">
-  	  <h2>Mux without SR</h2>
-  	</a>
-  </ul>
-
-  <ul>
-  	<a href="/youbora_noSR.html">
-  	  <h2>Youbora without SR</h2>
-  	</a>
-  </ul>
-
-<h1>Media Engines without SR</h1>
-
-  <ul>
-  	<a href="/hlsjs_noSR.html">
-  	  <h2> Hls.js without SR</h2>
-  	</a>
-  </ul>
-
-  <ul>
-  	<a href="/shakaplayer_noSR.html">
-  	  <h2> Shaka Player without SR</h2>
-  	</a>
-  </ul>
-
-   <ul>
-  	<a href="/dashjs_noSR.html">
-  	  <h2> Dash.js without SR</h2>
-  	</a>
-  </ul>
-
-  <ul>
-  	<a href="/rxplayer_noSR.html">
-  	  <h2> Rx Player without SR</h2>
-  	</a>
-  </ul>
-
-<h1>Video monitoring with SR</h1>
-
-  <ul>
-  	<a href="/mux_SR.html">
-  	  <h2> Mux with SR</h2>
-  	</a>
-  </ul>
-
-  <ul>
-  	<a href="/youbora_SR.html">
-  	  <h2> Youbora with SR</h2>
-  	</a>
-  </ul>
-
-<h1>Players with SR</h1>
-
-  <ul>
-  	<a href="/videojs_SR.html">
-  	  <h2>Video JS with SR</h2>
-  	</a>
-  </ul>
-
-  <ul>
-  	<a href="/clappr_SR.html">
-  	  <h2>ClappR JS with SR</h2>
-  	</a>
-  </ul>
-
-  <ul>
-  	<a href="/shakaplayer_SR.html">
-  	  <h2>Shaka Player with SR</h2>
-  	</a>
-  </ul>
-
+                        <p>Shaka Player</p>
+                    </div>
+                </a>
+            </th>
+        </tr>
+    </table>
 
 </body>
+
 </html>
